@@ -1798,7 +1798,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SENSOR" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="R11" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3K"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="4.7K"/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
