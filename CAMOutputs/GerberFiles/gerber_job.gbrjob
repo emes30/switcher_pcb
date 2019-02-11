@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-02-11T14:19:30Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "light_switch_smd3"
+        },
+        "Owner": "Misiu Misiu <misiu_25@wp.pl>",
+        "Size": {
+            "X": 45.72,
+            "Y": 45.72
+        }
+    }
+}
