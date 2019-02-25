@@ -9987,8 +9987,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.4064" drill="0.4064">
-<clearance class="0" value="0.4064"/>
+<class number="0" name="default" width="0.1524" drill="0.3048">
+<clearance class="0" value="0.1524"/>
 </class>
 </classes>
 <parts>
