@@ -2021,6 +2021,15 @@ design rules under a new name.</description>
 <wire x1="5.588" y1="28.956" x2="5.588" y2="23.876" width="0.3048" layer="16"/>
 <wire x1="5.588" y1="23.876" x2="12.446" y2="17.018" width="0.3048" layer="16"/>
 <wire x1="12.446" y1="17.018" x2="12.446" y2="5.126" width="0.3048" layer="16"/>
+<contactref element="SENSOR" pad="2"/>
+<contactref element="R11" pad="2"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="24.042" width="0.6096" layer="1"/>
+<wire x1="10.16" y1="24.042" x2="9.754" y2="23.876" width="0.762" layer="1"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="30.48" width="0.3048" layer="1"/>
+<wire x1="10.16" y1="30.48" x2="7.62" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="33.02" x2="7.62" y2="40.64" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="40.64" x2="5.362" y2="42.898" width="0.3048" layer="1"/>
+<wire x1="5.362" y1="42.898" x2="4.98" y2="42.898" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$19">
 </signal>
@@ -2250,12 +2259,6 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="38.0539" x2="17.78" y2="25.4" width="2.032" layer="16"/>
 <wire x1="17.78" y1="25.4" x2="20.32" y2="22.86" width="2.032" layer="16"/>
 </signal>
-<signal name="DATA">
-<contactref element="SENSOR" pad="2"/>
-<contactref element="R11" pad="2"/>
-<wire x1="10.16" y1="27.94" x2="10.16" y2="24.042" width="0.6096" layer="1"/>
-<wire x1="10.16" y1="24.042" x2="9.754" y2="23.876" width="0.762" layer="1"/>
-</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -2264,6 +2267,9 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="23,1,80fda8bf5aaa9af8"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

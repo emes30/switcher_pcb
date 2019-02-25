@@ -10345,6 +10345,15 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="10.16" y1="96.52" x2="10.16" y2="101.6" width="0.1524" layer="91"/>
 <label x="10.16" y="101.6" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SENSOR" gate="A" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="30.48" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<junction x="91.44" y="30.48"/>
+<label x="101.6" y="38.1" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -10569,13 +10578,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="218.44" y1="15.24" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="OUT_2" gate="-1" pin="KL"/>
 <wire x1="218.44" y1="35.56" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DATA" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="2"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
