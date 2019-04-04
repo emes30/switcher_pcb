@@ -2127,9 +2127,13 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R5" pad="2"/>
-<wire x1="6.096" y1="10.566" x2="8.636" y2="10.566" width="0" layer="19" extent="16-16"/>
-<wire x1="3.556" y1="10.566" x2="6.096" y2="10.566" width="0" layer="19" extent="16-16"/>
-<wire x1="10.07885" y1="13.72648125" x2="8.636" y2="10.566" width="0" layer="19" extent="1-16"/>
+<wire x1="3.556" y1="10.566" x2="6.096" y2="10.566" width="0.3048" layer="16"/>
+<wire x1="6.096" y1="10.566" x2="8.636" y2="10.566" width="0.3048" layer="16"/>
+<wire x1="8.636" y1="10.566" x2="8.636" y2="16.764" width="0.3048" layer="16"/>
+<wire x1="8.636" y1="16.764" x2="7.62" y2="17.78" width="0.3048" layer="16"/>
+<via x="7.62" y="17.78" extent="1-16" drill="0.35"/>
+<wire x1="7.62" y1="17.78" x2="10.464" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="10.464" y1="17.78" x2="12.598" y2="19.914" width="0.6096" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="LM1117" pad="3"/>
