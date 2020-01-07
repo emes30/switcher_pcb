@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12125,8 +12125,8 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="BT136" library="myblog_library" deviceset="BT136" device=""/>
 <part name="U1" library="SparkFun-RF" deviceset="ESP8266_ESP-01" device=""/>
 <part name="AC" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
-<part name="OUT_1" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
-<part name="OUT_2" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
+<part name="OUT_P2" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
+<part name="OUT_P3" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="HLK1" library="HLK-PM01" deviceset="HLK-PM01" device="3W"/>
@@ -12148,7 +12148,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="R9" library="resistor" deviceset="R-US_" device="R1206" value="430"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R1206" value="470"/>
 <part name="OK2" library="optocoupler" deviceset="MOC30*" device="S" technology="33"/>
-<part name="BT1" library="myblog_library" deviceset="BT136" device=""/>
+<part name="BT136." library="myblog_library" deviceset="BT136" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VSS" device=""/>
 <part name="SENSOR" library="pinhead" deviceset="PINHD-1X3" device="" value="CON1"/>
@@ -12156,7 +12156,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R1206" value="4.7K"/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="BTN_3" library="con-phoenix-350" deviceset="1751248" device=""/>
+<part name="POWER" library="con-phoenix-350" deviceset="1751248" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="PWR" library="led" deviceset="LED" device="SML1206"/>
 <part name="OUT1" library="led" deviceset="LED" device="SML1206"/>
@@ -12171,7 +12171,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="TE5" device="" package3d_urn="urn:adsk.eagle:package:14069/1"/>
+<part name="FUSE" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="TE5" device="" package3d_urn="urn:adsk.eagle:package:14069/1"/>
 <part name="X1" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751251" device="" package3d_urn="urn:adsk.eagle:package:9394/1"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 </parts>
@@ -12239,19 +12239,19 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <attribute name="NAME" x="60.452" y="72.771" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="66.04" y="69.977" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="OUT_1" gate="-1" x="233.68" y="68.58" smashed="yes">
+<instance part="OUT_P2" gate="-1" x="233.68" y="68.58" smashed="yes">
 <attribute name="NAME" x="236.728" y="67.691" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="64.897" size="1.778" layer="96"/>
 </instance>
-<instance part="OUT_1" gate="-2" x="233.68" y="76.2" smashed="yes">
+<instance part="OUT_P2" gate="-2" x="233.68" y="76.2" smashed="yes">
 <attribute name="NAME" x="236.728" y="75.311" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="72.517" size="1.778" layer="96"/>
 </instance>
-<instance part="OUT_2" gate="-1" x="236.22" y="25.4" smashed="yes">
+<instance part="OUT_P3" gate="-1" x="236.22" y="25.4" smashed="yes">
 <attribute name="NAME" x="239.268" y="24.511" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.68" y="21.717" size="1.778" layer="96"/>
 </instance>
-<instance part="OUT_2" gate="-2" x="236.22" y="35.56" smashed="yes">
+<instance part="OUT_P3" gate="-2" x="236.22" y="35.56" smashed="yes">
 <attribute name="NAME" x="239.268" y="34.671" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.68" y="31.877" size="1.778" layer="96"/>
 </instance>
@@ -12322,7 +12322,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <attribute name="NAME" x="157.4546" y="38.7096" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.4546" y="20.3962" size="1.778" layer="96"/>
 </instance>
-<instance part="BT1" gate="G$1" x="200.66" y="25.4" smashed="yes">
+<instance part="BT136." gate="G$1" x="200.66" y="25.4" smashed="yes">
 <attribute name="NAME" x="190.5" y="30.48" size="1.778" layer="94"/>
 </instance>
 <instance part="+3V10" gate="G$1" x="149.86" y="40.64" smashed="yes">
@@ -12348,11 +12348,11 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <instance part="+3V12" gate="G$1" x="91.44" y="48.26" smashed="yes">
 <attribute name="VALUE" x="88.9" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BTN_3" gate="-1" x="15.24" y="111.76" smashed="yes">
+<instance part="POWER" gate="-1" x="15.24" y="111.76" smashed="yes">
 <attribute name="NAME" x="16.51" y="110.871" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="110.871" size="1.778" layer="96"/>
 </instance>
-<instance part="BTN_3" gate="-2" x="15.24" y="119.38" smashed="yes">
+<instance part="POWER" gate="-2" x="15.24" y="119.38" smashed="yes">
 <attribute name="NAME" x="16.51" y="118.491" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="118.491" size="1.778" layer="96"/>
 </instance>
@@ -12405,7 +12405,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <instance part="+3V14" gate="G$1" x="243.84" y="132.08" smashed="yes">
 <attribute name="VALUE" x="241.3" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="F1" gate="1" x="195.58" y="142.24" smashed="yes">
+<instance part="FUSE" gate="1" x="195.58" y="142.24" smashed="yes">
 <attribute name="NAME" x="191.77" y="143.637" size="1.778" layer="95"/>
 <attribute name="VALUE" x="191.77" y="139.319" size="1.778" layer="96"/>
 </instance>
@@ -12488,7 +12488,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="10.16" y1="104.14" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="BTN_3" gate="-1" pin="K"/>
+<pinref part="POWER" gate="-1" pin="K"/>
 <wire x1="12.7" y1="111.76" x2="10.16" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -12691,7 +12691,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <segment>
 <wire x1="10.16" y1="119.38" x2="10.16" y2="127" width="0.1524" layer="91"/>
 <label x="10.16" y="127" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="BTN_3" gate="-2" pin="K"/>
+<pinref part="POWER" gate="-2" pin="K"/>
 <wire x1="12.7" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12717,7 +12717,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <wire x1="66.04" y1="81.28" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="F1" gate="1" pin="2"/>
+<pinref part="FUSE" gate="1" pin="2"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VPP"/>
 <wire x1="200.66" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="142.24" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
@@ -12736,13 +12736,13 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VSS"/>
 <wire x1="226.06" y1="68.58" x2="226.06" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="OUT_1" gate="-1" pin="KL"/>
+<pinref part="OUT_P2" gate="-1" pin="KL"/>
 <wire x1="231.14" y1="68.58" x2="226.06" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VSS"/>
 <wire x1="228.6" y1="25.4" x2="228.6" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="OUT_2" gate="-1" pin="KL"/>
+<pinref part="OUT_P3" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="25.4" x2="228.6" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12763,7 +12763,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="BT1" gate="G$1" pin="G"/>
+<pinref part="BT136." gate="G$1" pin="G"/>
 <wire x1="185.42" y1="22.86" x2="187.96" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12781,17 +12781,17 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <wire x1="200.66" y1="58.42" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="55.88" x2="218.44" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="OUT_1" gate="-2" pin="KL"/>
+<pinref part="OUT_P2" gate="-2" pin="KL"/>
 <wire x1="231.14" y1="76.2" x2="218.44" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="BT1" gate="G$1" pin="T1"/>
+<pinref part="BT136." gate="G$1" pin="T1"/>
 <wire x1="200.66" y1="17.78" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="15.24" x2="218.44" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="15.24" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="OUT_2" gate="-2" pin="KL"/>
+<pinref part="OUT_P3" gate="-2" pin="KL"/>
 <wire x1="233.68" y1="35.56" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12884,7 +12884,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 </net>
 <net name="V230FUSE" class="0">
 <segment>
-<pinref part="F1" gate="1" pin="1"/>
+<pinref part="FUSE" gate="1" pin="1"/>
 <wire x1="190.5" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
 <label x="182.88" y="142.24" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -12898,7 +12898,7 @@ Source: http://eshop.phoenixcontact.com .. 1751251.pdf</description>
 <segment>
 <pinref part="OK2" gate="-1" pin="A2"/>
 <wire x1="175.26" y1="35.56" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="BT1" gate="G$1" pin="T2"/>
+<pinref part="BT136." gate="G$1" pin="T2"/>
 <wire x1="200.66" y1="33.02" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="40.64" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
 <junction x="200.66" y="35.56"/>

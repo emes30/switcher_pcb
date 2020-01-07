@@ -1,37 +1,13 @@
 {
     "author": {
-        "email": "support.eagle@autodesk.com",
-        "name": "Autodesk EAGLE"
+        "email": "misiu_25@wp.pl",
+        "name": "Misiu Misiu"
     },
     "description": {
         "EN": "EAGLE default 2 layer CAM job."
     },
-    "output_type": "zip",
+    "output_type": "directory",
     "outputs": [
-        {
-            "filename_prefix": "CAMOutputs/DrillFiles",
-            "format_specifier": {
-                "decimal": 3,
-                "integer": 3
-            },
-            "output_type": "drill",
-            "outputs": [
-                {
-                    "drills": {
-                        "NPTH": true,
-                        "PTH": true,
-                        "VIA": true
-                    },
-                    "filename_format": "%DRILLPREFIX/drills.xln",
-                    "layers": {
-                        "from": 1,
-                        "to": 16
-                    },
-                    "name": "Excellon",
-                    "type": "excellon"
-                }
-            ]
-        },
         {
             "filename_prefix": "CAMOutputs/GerberFiles",
             "format_specifier": {
@@ -42,6 +18,13 @@
             "output_type": "gerber",
             "outputs": [
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Copper",
@@ -52,14 +35,21 @@
                     "filename_format": "%PREFIX/copper_top.gbr",
                     "layers": [
                         1,
-                        18,
-                        17
+                        17,
+                        18
                     ],
                     "name": "Top Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Copper",
@@ -78,6 +68,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": true,
                     "config": {
                         "file_function": "Profile",
@@ -92,6 +89,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Soldermask",
@@ -107,6 +111,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Soldermask",
@@ -122,6 +133,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Paste",
@@ -137,6 +155,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Paste",
@@ -152,6 +177,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Legend",
@@ -161,7 +193,8 @@
                     "filename_format": "%PREFIX/silkscreen_top.gbr",
                     "layers": [
                         21,
-                        25
+                        25,
+                        27
                     ],
                     "milling": false,
                     "name": "Silkscreen Top",
@@ -169,6 +202,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "file_function": "Legend",
@@ -178,7 +218,8 @@
                     "filename_format": "%PREFIX/silkscreen_bottom.gbr",
                     "layers": [
                         22,
-                        26
+                        26,
+                        28
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",
@@ -189,13 +230,55 @@
             "version": "RS274X"
         },
         {
+            "filename_prefix": "CAMOutputs/DrillFiles",
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "filename_format": "%DRILLPREFIX/drill_%FROM_%TO.xln",
+                    "name": "Auto Drill",
+                    "type": "autodrills"
+                }
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/Assembly",
+            "output_type": "assembly",
+            "outputs": [
+                {
+                    "filename_format": "%ASSEMBLYPREFIX/%N",
+                    "list_attribute": true,
+                    "list_type": "values",
+                    "name": "Bill of Material",
+                    "output_format": "txt",
+                    "type": "bom"
+                },
+                {
+                    "filename_format": "%ASSEMBLYPREFIX/PnP_%N_%BOARDSIDE",
+                    "name": "Pick and Place",
+                    "output_format": "txt",
+                    "type": "pick_and_place"
+                }
+            ]
+        },
+        {
             "filename_prefix": "CAMOutputs/DrawingFiles",
             "output_type": "drawing",
             "outputs": [
             ]
         }
     ],
-    "timestamp": "2018-09-15T00:00:00",
+    "timestamp": "2020-01-07T17:01:39",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
